@@ -3,16 +3,19 @@
     <MyHeader
     :menuElements = 'menuItems'
     />
+    <MyMain/>
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
+import MyMain from './components/MyMain.vue'
 
 export default {
   name: 'App',
   components: {
-    MyHeader
+    MyHeader,
+    MyMain
   },
 
   data() {
@@ -55,6 +58,12 @@ export default {
 
 <style lang="scss">
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
