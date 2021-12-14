@@ -1,19 +1,60 @@
 <template>
-<div id="jumbotron">
+<section>
+    <div id="jumbotron">
     <!-- <img src="@/assets/img/avada-spa-slider-image-1-new.jpg" alt=""> -->
     <div>
         <span>Give yourself permission</span>
         <h1>Relax, Revive e Rejuvenate</h1>
         <button class="btn btn-colored">EXPLORE TREATMENTS</button>
     </div>
-
 </div>
+    <OurApproach
+    :typeOfServices= 'services'
+    />
+</section>
+
     
 </template>
 
 <script>
+import OurApproach from '../components/OurApproach.vue'
+
 export default {
-    name:'MyMain'
+    name:'MyMain',
+    components: {
+        OurApproach
+    },
+    data() {
+        return {
+            services: [
+                {
+                    icon: 'fas fa-sign-language',
+                    serviceTitle:'Massages',
+                    id: 1
+                },
+                {
+                    icon: 'far fa-smile',
+                    serviceTitle:'Therapy',
+                    id: 2
+                },
+                {
+                    icon: 'fas fa-heart',
+                    serviceTitle:'Relaxing',
+                    id: 3
+                },
+                {
+                    icon: 'far fa-moon',
+                    serviceTitle:'Meditation',
+                    id: 4
+                },
+                {
+                    icon: 'far fa-snowflake',
+                    serviceTitle:'Natural Beauty',
+                    id: 5
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -33,26 +74,13 @@ export default {
     span {
         font-style: italic;
         font-size: 35px;
-        color: white;
+        color: #e9ddce;
     }
     h1{
         font-size: 55px;
         color: white;
     }
 }
-.btn {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    width: 200px;
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: none;
-    margin: 10px 0;
-}
-.btn-colored {
-    background-color:#d3cac0;
-    color: white;
-    font-weight: 1000;
-}
+
 
 </style>

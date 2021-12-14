@@ -71,4 +71,26 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+.btn {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  // width: 200px;
+  padding: 5px 30px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0;
+  font-weight: 1000;
+  cursor: pointer;
+}
+.btn-colored {
+  background-color:#d3cac0;
+  color: white;
+  
+}
+.btn-empty {
+  background-color: transparent;
+  border: 1px solid #bcafa1;
+  color: #bcafa1;
+  margin: 30px;
+}
 </style>
