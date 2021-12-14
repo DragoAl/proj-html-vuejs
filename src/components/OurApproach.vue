@@ -67,7 +67,7 @@ section{
     i {
         margin: 20px 0;
         transform: scaleX(-1);
-        font-size: 30px;
+        font-size: 22px;
         color:#bcafa1
     }
     
@@ -89,7 +89,9 @@ section{
             cursor: pointer;
             margin:0px 40px;
             
-
+            .service-icon {
+                font-size: 28px;
+            }
             
             .service-name {
                 display:block;

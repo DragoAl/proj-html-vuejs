@@ -11,6 +11,7 @@
     <OurApproach
     :typeOfServices= 'services'
     />
+    <BookAppointment/>
 </section>
 
     
@@ -18,11 +19,14 @@
 
 <script>
 import OurApproach from '../components/OurApproach.vue'
+import BookAppointment from '../components/BookAppointment.vue'
+
 
 export default {
     name:'MyMain',
     components: {
-        OurApproach
+        OurApproach,
+        BookAppointment
     },
     data() {
         return {
