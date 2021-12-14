@@ -1,16 +1,19 @@
 <template>
 <section>
     <div id="jumbotron">
-    <!-- <img src="@/assets/img/avada-spa-slider-image-1-new.jpg" alt=""> -->
-    <div>
-        <span>Give yourself permission</span>
-        <h1>Relax, Revive e Rejuvenate</h1>
-        <button class="btn btn-colored">EXPLORE TREATMENTS</button>
+        <!-- <img src="@/assets/img/avada-spa-slider-image-1-new.jpg" alt=""> -->
+        <div>
+            <span>Give yourself permission</span>
+            <h1>Relax, Revive &amp; Rejuvenate</h1>
+            <button class="btn btn-colored">EXPLORE TREATMENTS</button>
+        </div>
     </div>
-</div>
-    <OurApproach
-    :typeOfServices= 'services'
-    />
+    <div id="back-radius">
+        <OurApproach
+        :typeOfServices= 'services'
+        />
+    </div>
+
     <BookAppointment/>
 </section>
 
@@ -63,6 +66,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+// #back-radius {
+//     background-color: blueviolet;
+//     // border-radius: 100% 0 100% 0/ 0 80% 20% 100%;
+//     border-bottom-right-radius: 35%;
+//     border-bottom-left-radius: 35%;
+//     height: 700px;
+// }
+// section {
+//     background-color:#f9f9f9 ;
+// }
 #jumbotron {
     font-family: 'Libre Baskerville', serif;
 
@@ -72,6 +86,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     // img {
     //     max-width: 100%;
     // }

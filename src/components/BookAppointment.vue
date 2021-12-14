@@ -2,7 +2,7 @@
     <section>
         <img src="@/assets/img/face_and_body_treatments-new-400x581.jpg" alt="face_and_body_treatments">
         <div id="sectionToBook">
-            <h2>Face e Body Treatments</h2>
+            <h2>Face &amp; Body Treatments</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde id, dolorum  amet iure commodi nobis quo ipsam ea dolores quod doloremque corrupti?</p>
            
             <div class="price-service" id="massage">
@@ -25,6 +25,8 @@
                 <span class="treatment-name">Aromatherapy</span>
                 <p class="treatments-info " :class=" {dispNone: activeAroma}"><strong>$35 For 1/2 Hour</strong> - Lorem ipsum dolor sit</p>
             </div>
+
+            <button id="bookApp" class="btn btn-empty">BOOK AN APPOINTMENT</button>
         </div>
     </section>
 </template>
@@ -68,9 +70,12 @@ section {
     justify-content: center;
     align-items: center;
     padding-top: 100px ;
+    height: 800px;
+    
 
     img {
         border: 20px solid white;
+        box-shadow: 5px 5px 10px 0px #6c6c6c;
         width: 350px;
     }
     #sectionToBook {
@@ -79,14 +84,21 @@ section {
         h2 {
             font-family: 'Libre Baskerville', serif;
             font-size: 32px;
-            font-weight: 100;
+            font-weight: 200;
+            color: #6c6c6c;
+
 
 
         }
 
+        p{
+            margin: 20px 0 40px;
+            font-size: 14px;
+        }
+
         .price-service {
             width: 300px;
-            margin: 5px;
+            margin: 8px 0;
             min-height: 40px;
             padding: 10px;
             background-color: white;
@@ -126,6 +138,11 @@ section {
 
         .dispNone {
             display: none;
+        }
+
+        #bookApp {
+            margin: 30px 0;
+            font-size: 12px;
         }
     }
 }

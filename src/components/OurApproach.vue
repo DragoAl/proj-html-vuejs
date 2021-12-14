@@ -36,10 +36,13 @@ props: {
 </script>
 
 <style scoped lang="scss">
+
+
 section{
     font-family: 'Libre Baskerville', serif;
     width: 60%;
     margin: 70px auto;
+
     
     h2 {
         font-size: 42px;
