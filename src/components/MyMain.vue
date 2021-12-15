@@ -14,7 +14,9 @@
     :typeOfServices= 'services'
     />
     <div id="back-radius"></div>
-    <BookAppointment/>
+    <BookAppointment
+    :priceAndServices= 'kindOfServices'
+    />
     <TreatmentsSection/>
 </section>
 
@@ -62,6 +64,24 @@ export default {
                     icon: 'far fa-snowflake',
                     serviceTitle:'Natural Beauty',
                     id: 5
+                }
+            ],
+            kindOfServices: [
+                {
+                    name:'Oil Massage',
+                    price:'$62 For 2 Hours',
+                    description: 'Lorem ipsum dolor sit amet'
+                },
+                
+                {
+                    name:'Manicure',
+                    price:'$40 For 1 Hour',
+                    description: 'Lorem ipsum dolor sit amet'
+                },
+                {
+                    name:'Aromatherapy',
+                    price:'$35 For 1/2 Hour',
+                    description: 'Lorem ipsum dolor sit amet'
                 }
             ]
         }

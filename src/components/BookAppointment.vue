@@ -26,6 +26,12 @@
                 <p class="treatments-info " :class=" {dispNone: activeAroma}"><strong>$35 For 1/2 Hour</strong> - Lorem ipsum dolor sit</p>
             </div>
 
+            <!-- <details v-for="service, i in priceAndServices " :key= "i">
+                <summary> {{service.name}}</summary>
+                <p class="treatments-info " ><strong>{{service.price}}</strong> - {{service.description}}</p>
+
+            </details> -->
+
             <button id="bookApp" class="btn btn-empty">BOOK AN APPOINTMENT</button>
         </div>
     </section>
@@ -33,6 +39,9 @@
 <script>
 export default {
     name:'BookAppointment',
+    props: {
+        priceAndServices: Array
+    },
     data() {
         return {
             activeMassage: true,
@@ -71,6 +80,10 @@ section {
     align-items: center;
     padding-top: 100px ;
     height: 800px;
+
+    summary {
+        list-style-image:url();
+    }
 
     img {
         border: 20px solid white;

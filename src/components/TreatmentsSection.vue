@@ -86,7 +86,8 @@ export default {
                     treatName: 'Residential',
                     treatScope: 'Vestibulum nec velit ante. Praesent dignissim interdum est, in lacinia elit pretium nec. Aliquam erat voluptat. Fusce laoreet mi leo.'
                 },
-            ]
+            ],
+
         }
     }
 }
