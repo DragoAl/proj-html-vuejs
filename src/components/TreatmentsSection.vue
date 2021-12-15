@@ -195,6 +195,10 @@ section {
         padding: 7px 20px;
         background-color: #b9afa1;
         margin-left: 100px;
+        
+        &:hover {
+        background-color:#33a7b9;
+  }
 
     }
     

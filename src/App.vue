@@ -131,6 +131,9 @@ export default {
 .btn-colored {
   background-color:#d3cac0;
   color: white;
+  &:hover {
+    background-color:#33a7b9;
+  }
   
 }
 .btn-empty {
@@ -138,5 +141,9 @@ export default {
   border: 1px solid #bcafa1;
   color: #bcafa1;
   margin: 30px;
+  &:hover {
+    border: 1px solid #33a7b9 ;
+    color: #33a7b9;
+  }
 }
 </style>

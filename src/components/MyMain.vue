@@ -7,6 +7,7 @@
             <h1>Relax, Revive &amp; Rejuvenate</h1>
             <button class="btn btn-colored">EXPLORE TREATMENTS</button>
         </div>
+    
     </div>
     
     <OurApproach
