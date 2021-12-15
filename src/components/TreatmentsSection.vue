@@ -13,6 +13,16 @@
             </div>
             <div class="backImg-treat" id="backImgBottom"></div>
         </div>
+        <div id="specialOffer">
+            
+            <div class="discount">25% <span>SPECIAL OFFER</span></div>
+                <div class="mood">Take some time. Treat yourself. You deserve it.
+                <span>Book a treatment this month and receive a 25% on all further treatments</span>
+            </div>
+            
+           
+            <button class="btn btn-bookNow">BOOK NOW</button>
+        </div>
        
 
     </section>
@@ -135,6 +145,61 @@ section {
 #backImgBottom {
     height: 150px;
     background-position: bottom;
+}
+
+#specialOffer {
+    height: 300px;
+    width: 100%;
+    background-image:url("../assets/img/ptb_cta-new.jpg") ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .discount {
+        width: 120px;
+        height: 100px;
+        border: 1px solid white;
+        font-size: 42px;
+        color: white;
+        padding: 10px;
+        
+        span {
+            display: block;
+            font-size: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .mood {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 28px;
+        font-style: italic;
+        color: white;
+        text-align: left;
+        margin: 0 20px;
+
+        span {
+            font-family: Avenir, Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-size: 16px;
+            display: block;
+            margin-top: 10px;
+        }
+
+    }
+
+    .btn-bookNow {
+        color: white;
+        font-size: 12px;
+        padding: 5px 14px;
+        background-color: #b9afa1;
+        margin-left: 100px;
+
+    }
+    
+
+
 }
 
 </style>
