@@ -1,9 +1,20 @@
 <template>
     <section>
+        <div id="ourTreat">OUR TREATMENTS</div>
         <TreatmentCard
         v-for="treatment, i in treatmentsList " :key="i"
         :details='treatment'
         />
+        <div id="backImg-cont">
+            <div class="backImg-treat" id="backImgTop"></div>
+            <div class="backImg-treat" id="backImgCenter">
+                <p>“If you want to relax, watch the clouds pass by if you’re laying on the grass, or sit in front of the creek; just doing nothing and having those still moments is what really rejuvenates the body…”.</p>  
+                <div> <strong>FRIEDA FRIEDSON</strong> , MASSEUSE</div> 
+            </div>
+            <div class="backImg-treat" id="backImgBottom"></div>
+        </div>
+       
+
     </section>
 </template>
 
@@ -76,6 +87,54 @@ section {
     display: flex;
     flex-wrap: wrap;
    
+}
+
+#ourTreat {
+    font-family: 'Libre Baskerville', serif;
+    height: 150px;
+    width: 100%;
+    background-image:url("../assets/img/ptb_cta-new.jpg") ;
+    line-height: 150px;
+    vertical-align: middle;
+    font-size: 28px;
+    color: white;
+}
+
+#backImg-cont {
+    width: 100%;
+    height: 600px;
+}
+
+.backImg-treat {
+    background-image: url("../assets/img/Home-quota-new.jpg");
+}
+
+#backImgTop {
+    height: 150px;
+    background-position: top;
+   
+}
+
+#backImgCenter {
+    height: 300px;
+    background-position: center;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 35%;
+    
+    div {
+        margin: 20px 0;
+    }
+    
+}
+
+#backImgBottom {
+    height: 150px;
+    background-position: bottom;
 }
 
 </style>
