@@ -71,13 +71,13 @@ section {
     align-items: center;
     padding-top: 100px ;
     height: 800px;
-    
 
     img {
         border: 20px solid white;
         box-shadow: 5px 5px 10px 0px #6c6c6c;
         width: 350px;
     }
+    
     #sectionToBook {
         margin: 0 40px;
         width: 20%;
@@ -86,9 +86,6 @@ section {
             font-size: 32px;
             font-weight: 200;
             color: #6c6c6c;
-
-
-
         }
 
         p{
