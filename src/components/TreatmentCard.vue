@@ -1,6 +1,10 @@
 <template>
     <div class="card" >
-        <img :src="require(`@/assets/img/${details.img}`)" :alt="details.treatName">
+        <div class="img-box">        
+            <img :src="require(`@/assets/img/${details.img}`)" :alt="details.treatName">
+            <div class="backgroundHover"> {{details.treatName}}</div>
+        </div>
+        
         <h3>{{details.treatName}}</h3>
         <div class="separator"></div>
         <p>{{details.treatScope}}</p>
@@ -22,10 +26,40 @@ export default {
     text-align: left;
     border: 0.1em solid #dadada;
     cursor: pointer;
-
-    img {
-        width: 100%;
+    
+    &:hover img{
+        display: none;
     }
+    
+    &:hover .backgroundHover {
+        display: block;
+    }
+
+    .backgroundHover {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 36px;
+        font-style: italic;
+        color:white ;
+        display: none;
+        background-color:#b9afa1 ;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 500px ;
+    }
+
+
+    .img-box {
+        height: 500px;
+        
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+   
 
     h3 {
         font-family: 'Libre Baskerville', serif;
