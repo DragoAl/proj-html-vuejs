@@ -41,7 +41,7 @@ props: {
 section{
     font-family: 'Libre Baskerville', serif;
     width: 60%;
-    margin: 70px auto;
+    margin: 70px auto 0;
 
     
     h2 {

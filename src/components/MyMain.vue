@@ -8,13 +8,13 @@
             <button class="btn btn-colored">EXPLORE TREATMENTS</button>
         </div>
     </div>
-    <div id="back-radius">
-        <OurApproach
-        :typeOfServices= 'services'
-        />
-    </div>
-
+    
+    <OurApproach
+    :typeOfServices= 'services'
+    />
+    <div id="back-radius"></div>
     <BookAppointment/>
+    <TreatmentsSection/>
 </section>
 
     
@@ -23,13 +23,16 @@
 <script>
 import OurApproach from '../components/OurApproach.vue'
 import BookAppointment from '../components/BookAppointment.vue'
+import TreatmentsSection from './TreatmentsSection.vue'
+
 
 
 export default {
     name:'MyMain',
     components: {
         OurApproach,
-        BookAppointment
+        BookAppointment,
+        TreatmentsSection
     },
     data() {
         return {
@@ -67,19 +70,16 @@ export default {
 
 <style scoped lang="scss">
 
-// #back-radius {
-//     background-color: blueviolet;
-//     // border-radius: 100% 0 100% 0/ 0 80% 20% 100%;
-//     border-bottom-right-radius: 35%;
-//     border-bottom-left-radius: 35%;
-//     height: 700px;
-// }
-// section {
-//     background-color:#f9f9f9 ;
-// }
+#back-radius {
+    background-color:white;
+    border-radius: 50% 50% 50% 50%;
+    width: 100%;
+    height: 100px;
+    transform: translateY(50%);
+}
+
 #jumbotron {
     font-family: 'Libre Baskerville', serif;
-
     height: 600px;
     background-size: 100% 600px;
     background-image: url("../assets/img/avada-spa-slider-image-1-new.jpg");
