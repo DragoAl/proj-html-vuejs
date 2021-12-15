@@ -4,53 +4,98 @@
     :menuElements = 'menuItems'
     />
     <MyMain/>
+    <MyFooter
+    :socialLogos= ' socialItems'
+    :infoFooter= 'footerInfos'
+    />
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
 import MyMain from './components/MyMain.vue'
+import MyFooter from './components/MyFooter.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
-    MyMain
+    MyMain,
+    MyFooter
   },
 
   data() {
     return {
-     menuItems: [
-      {
-        icon: "fab fa-pagelines",
-        title: 'TREATMENTS',
-        subtitle: 'Face & Body'
+      menuItems: [
+        {
+          icon: "fab fa-pagelines",
+          title: 'TREATMENTS',
+          subtitle: 'Face & Body'
+          
+        },
         
-      },
+        {
+          icon: "fas fa-male",
+          title: 'ABOUT',
+          subtitle: 'Our Team'
+          
+        },
+        
+        {
+          icon: "fas fa-heart",
+          title: 'JOURNAL',
+          subtitle: 'Tips & Tricks'
+          
+        },
+        
+        {
+          icon: "fas fa-bookmark",
+          title: 'BOOK NOW',
+          subtitle: 'Special Offers'
+          
+        },
+      ],
       
-      {
-        icon: "fas fa-male",
-        title: 'ABOUT',
-        subtitle: 'Our Team'
-        
-      },
-      
-      {
-        icon: "fas fa-heart",
-        title: 'JOURNAL',
-        subtitle: 'Tips & Tricks'
-        
-      },
-      
-      {
-        icon: "fas fa-bookmark",
-        title: 'BOOK NOW',
-        subtitle: 'Special Offers'
-        
-      },
-     ] 
+      socialItems: [
+        {
+          socialIcon: 'fab fa-facebook-f',
+          url:''
+        },
 
+        {
+          socialIcon: 'fab fa-twitter',
+          url:''
+        },
 
+        {
+          socialIcon: 'fab fa-instagram',
+          url:''
+        },
+
+        {
+          socialIcon: 'fab fa-youtube',
+          url:''
+        }
+      ],
+      
+      footerInfos: [
+        {
+          infoIcon:'far fa-copyright',
+          infoName: 'copyright 2012-2020'
+        },
+        {
+          infoIcon:'',
+          infoName: 'AVADATHEME BY THEMEFUSION'
+        },
+        {
+          infoIcon:'',
+          infoName: 'ALL RIGHT RESERVED'
+        },
+        {
+          infoIcon:'',
+          infoName: 'powered by wordpress'
+        }
+      ]
     }
   }
 }
@@ -58,6 +103,7 @@ export default {
 
 <style lang="scss">
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
+
 * {
   margin: 0;
   padding: 0;

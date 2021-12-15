@@ -192,7 +192,7 @@ section {
     .btn-bookNow {
         color: white;
         font-size: 12px;
-        padding: 5px 14px;
+        padding: 7px 20px;
         background-color: #b9afa1;
         margin-left: 100px;
 

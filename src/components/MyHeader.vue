@@ -6,7 +6,7 @@
         <h5>{{element.title}}</h5>
         <span>{{element.subtitle}}</span>
     </div>
-    <img src="../assets/img/avada-spa-logo-retina-new-400x46.png" alt="">
+    <img src="../assets/img/avada-spa-logo-retina-new-400x46.png" alt="logo">
     <div v-for= "element, i in menuElements.slice(2,4) " :key= "'item'+i ">
         <i :class="element.icon"></i>
         <h5>{{element.title}}</h5>
